@@ -63,19 +63,17 @@ type ErrorModel struct {
 }
 
 func generateFakeDistributionData() *DistributionDataRM {
-	// Sahte veri oluşturulması
 	massPaymentId := "123456789"
 	massPaymentType := 1
 	invitationId := 9876
 	id := 54321
-	createdAt := time.Now() // Şu anki zamanı al
+	createdAt := time.Now()
 	amount := 100.50
 	currency := 1
 	fee := 5.0
 	resultinBalance := amount - fee
-	description := "Bu bir sahte dağıtım açıklamasıdır."
+	description := "sahte aciklama"
 
-	// Sahte veri struct'ını oluşturma
 	fakeData := &DistributionDataRM{
 		MassPaymentId:   &massPaymentId,
 		MassPaymentType: &massPaymentType,

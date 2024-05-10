@@ -6,6 +6,9 @@ import (
 
 	"github.com/gin-gonic/gin"
 )
+type NewModel struct {
+	Data string
+}
 
 type DistributionRM struct {
 	Data      *DistributionDataRM `json:"data"`
